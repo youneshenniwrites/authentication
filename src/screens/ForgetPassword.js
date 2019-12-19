@@ -1,12 +1,21 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-import { Container, Text } from '../shared/styledComponents';
-import { colors } from '../shared/constants';
+import { Container, Text, TextInput, Button } from '../shared/styledComponents';
+import { colors, placeholders, buttons } from '../shared/constants';
 
 const ForgetPassword = () => (
   <Container>
-    <Text color={colors.dark}>Hi</Text>
+    <TextInput placeholder={placeholders.username} />
+    <Button>
+      <Text color={colors.bright}>{buttons.code}</Text>
+    </Button>
+    <TextInput placeholder={placeholders.newPassword} password />
+    <TextInput placeholder={placeholders.code} keyboardType="numeric" />
+    <Text color={colors.bright}>Send</Text>
+    <Button>
+      <Text color={colors.bright}>{buttons.confirm}</Text>
+    </Button>
   </Container>
 );
 

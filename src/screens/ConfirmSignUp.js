@@ -1,14 +1,18 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-import { Container, TextInput, Text } from '../shared/styledComponents';
-import { colors, content } from '../shared/constants';
+import { Container, TextInput, Text, Button } from '../shared/styledComponents';
+import { colors, placeholders, routes, buttons } from '../shared/constants';
 
-const ConfirmSignUp = () => (
+const ConfirmSignUp = ({ navigation: { navigate } }) => (
   <Container>
-    <TextInput placeholder={content.username} />
-    <TextInput placeholder={content.password} password />
-    <Text color={colors.dark}>TODO</Text>
+    <TextInput placeholder={placeholders.code} />
+    <Button onPress={() => navigate(routes.confirm)}>
+      <Text color={colors.bright}>{buttons.confirm}</Text>
+    </Button>
+    <Button onPress={() => navigate(routes.confirm)}>
+      <Text color={colors.bright}>{buttons.resend}</Text>
+    </Button>
   </Container>
 );
 

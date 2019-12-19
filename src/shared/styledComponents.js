@@ -10,11 +10,11 @@ export const Container = styled.SafeAreaView`
 `;
 
 export const TextInput = styled.TextInput.attrs(props => ({
-  autoCapitalize: 'none',
-  placeholder: props.placeholder,
   autoCorrect: false,
-  secureTextEntry: props.password,
+  autoCapitalize: 'none',
   returnKeyType: 'done',
+  placeholder: props.placeholder,
+  secureTextEntry: props.password,
 }))`
   font-size: 18px;
   border-color: #0195;
@@ -24,6 +24,7 @@ export const TextInput = styled.TextInput.attrs(props => ({
   height: 55px;
   width: ${width * 0.9}px;
   padding: 16px;
+  padding-left: 24px;
   margin-bottom: 16px;
   margin-top: 16px;
 `;

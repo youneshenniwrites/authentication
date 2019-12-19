@@ -1,11 +1,27 @@
+export const messages = {
+  forget: 'Forget password ?',
+  register: 'Create an account',
+  already: 'Already a member ?',
+};
+
 export const colors = {
   bright: '#fff',
   dark: '#000',
 };
 
-export const content = {
+export const buttons = {
+  login: 'Sign in',
+  register: 'Sign up',
+  code: 'Send code',
+  confirm: 'Confirm',
+  resend: 'Resend code',
+};
+
+export const placeholders = {
   username: 'Username',
   password: 'Password',
+  code: 'Confirmation code',
+  newPassword: 'New password',
   email: 'Email',
   phone: 'Phone',
 };

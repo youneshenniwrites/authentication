@@ -2,19 +2,25 @@
 import React from 'react';
 
 import { Container, TextInput, Button, Text } from '../shared/styledComponents';
-import { colors, content, routes } from '../shared/constants';
+import {
+  messages,
+  colors,
+  placeholders,
+  routes,
+  buttons,
+} from '../shared/constants';
 
 const SignUp = ({ navigation: { navigate } }) => (
   <Container>
-    <TextInput placeholder={content.username} />
-    <TextInput placeholder={content.password} password />
-    <TextInput placeholder={content.email} keyboardType="email-address" />
-    <TextInput placeholder={content.phone} keyboardType="phone-pad" />
+    <TextInput placeholder={placeholders.username} />
+    <TextInput placeholder={placeholders.password} password />
+    <TextInput placeholder={placeholders.email} keyboardType="email-address" />
+    <TextInput placeholder={placeholders.phone} keyboardType="phone-pad" />
     <Button onPress={() => navigate(routes.confirm)}>
-      <Text color={colors.bright}>Sign up</Text>
+      <Text color={colors.bright}>{buttons.register}</Text>
     </Button>
     <Text color={colors.dark} onPress={() => navigate(routes.login)}>
-      Already registered ?
+      {messages.already}
     </Text>
   </Container>
 );
