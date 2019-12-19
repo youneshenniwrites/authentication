@@ -5,7 +5,7 @@ import { AsyncStorage } from 'react-native';
 import { Container, TextInput, Button, Text } from '../shared/styledComponents';
 import { colors, content, routes } from '../shared/constants';
 
-const SignIn = ({ navigation: { navigate } }) => {
+const SignUp = ({ navigation: { navigate } }) => {
   const signInAsync = async () => {
     await AsyncStorage.setItem('userToken', 'abc');
     navigate(routes.app);
@@ -15,17 +15,14 @@ const SignIn = ({ navigation: { navigate } }) => {
     <Container>
       <TextInput placeholder={content.username} />
       <TextInput placeholder={content.password} password />
-      <Text color={colors.dark} onPress={() => navigate(routes.forget)}>
-        Forget password?
-      </Text>
       <Button onPress={signInAsync}>
         <Text color={colors.bright}>Sign in</Text>
       </Button>
-      <Text color={colors.dark} onPress={() => navigate(routes.register)}>
-        Create an account
+      <Text color={colors.dark} onPress={() => navigate(routes.login)}>
+        Already registered ?
       </Text>
     </Container>
   );
 };
 
-export default SignIn;
+export default SignUp;

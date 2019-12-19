@@ -13,4 +13,7 @@ export const routes = {
   app: 'App',
   loader: 'Loading',
   profile: 'Profile',
+  register: 'SignUp',
+  login: 'SignIn',
+  forget: 'ForgetPassword',
 };
