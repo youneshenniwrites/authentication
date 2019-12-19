@@ -11,7 +11,7 @@ const HomeScreen = ({ navigation }) => {
 
   const signOutAsync = async () => {
     await AsyncStorage.clear();
-    navigation.navigate('AuthLoading');
+    navigation.navigate('Loading');
   };
   return (
     <Container>
