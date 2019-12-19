@@ -27,9 +27,7 @@ const SignIn = ({ navigation: { navigate } }) => {
       <Button onPress={signInAsync}>
         <Text color={colors.bright}>{buttons.login}</Text>
       </Button>
-      <Text color={colors.dark} onPress={() => navigate(routes.register)}>
-        {messages.register}
-      </Text>
+      <Text onPress={() => navigate(routes.register)}>{messages.register}</Text>
     </Container>
   );
 };

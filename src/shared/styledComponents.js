@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { Dimensions } from 'react-native';
+import { colors } from './constants';
 
 const { width } = Dimensions.get('screen');
 
@@ -44,5 +45,5 @@ export const Button = styled.TouchableOpacity`
 export const Text = styled.Text`
   font-size: 18px;
   font-weight: 500;
-  color: ${props => props.color};
+  color: ${props => (props.color ? props.color : colors.dark)};
 `;

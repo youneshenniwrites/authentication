@@ -7,10 +7,10 @@ import { colors, placeholders, routes, buttons } from '../shared/constants';
 const ConfirmSignUp = ({ navigation: { navigate } }) => (
   <Container>
     <TextInput placeholder={placeholders.code} />
-    <Button onPress={() => navigate(routes.confirm)}>
+    <Button onPress={() => navigate(routes.app)}>
       <Text color={colors.bright}>{buttons.confirm}</Text>
     </Button>
-    <Button onPress={() => navigate(routes.confirm)}>
+    <Button>
       <Text color={colors.bright}>{buttons.resend}</Text>
     </Button>
   </Container>

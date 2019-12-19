@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { AsyncStorage, Button } from 'react-native';
+import { AsyncStorage } from 'react-native';
 
-import { Container } from '../shared/styledComponents';
+import { Container, Text } from '../shared/styledComponents';
 import { routes } from '../shared/constants';
 
 const HomeScreen = ({ navigation }) => {
@@ -16,8 +16,8 @@ const HomeScreen = ({ navigation }) => {
   };
   return (
     <Container>
-      <Button title="Show me more of the app" onPress={showMoreApp} />
-      <Button title="Actually, sign me out :)" onPress={signOutAsync} />
+      <Text onPress={showMoreApp}>Show me more of the app</Text>
+      <Text onPress={signOutAsync}>Actually, sign me out :)</Text>
     </Container>
   );
 };

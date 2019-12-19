@@ -11,9 +11,9 @@ export const colors = {
 
 export const buttons = {
   login: 'Sign in',
-  register: 'Sign up',
   code: 'Send code',
   confirm: 'Confirm',
+  send: 'Send code',
   resend: 'Resend code',
 };
 

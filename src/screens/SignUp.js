@@ -17,11 +17,9 @@ const SignUp = ({ navigation: { navigate } }) => (
     <TextInput placeholder={placeholders.email} keyboardType="email-address" />
     <TextInput placeholder={placeholders.phone} keyboardType="phone-pad" />
     <Button onPress={() => navigate(routes.confirm)}>
-      <Text color={colors.bright}>{buttons.register}</Text>
+      <Text color={colors.bright}>{buttons.send}</Text>
     </Button>
-    <Text color={colors.dark} onPress={() => navigate(routes.login)}>
-      {messages.already}
-    </Text>
+    <Text onPress={() => navigate(routes.login)}>{messages.already}</Text>
   </Container>
 );
 

@@ -12,7 +12,7 @@ const ForgetPassword = () => (
     </Button>
     <TextInput placeholder={placeholders.newPassword} password />
     <TextInput placeholder={placeholders.code} keyboardType="numeric" />
-    <Text color={colors.bright}>Send</Text>
+    <Text color={colors.bright}>{buttons.send}</Text>
     <Button>
       <Text color={colors.bright}>{buttons.confirm}</Text>
     </Button>
