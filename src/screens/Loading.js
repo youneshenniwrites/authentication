@@ -3,16 +3,17 @@ import React, { useEffect, useCallback } from 'react';
 import { ActivityIndicator, AsyncStorage } from 'react-native';
 
 import { Container } from '../shared/styledComponents';
+import { routes } from '../shared/constants';
 
 const Loading = ({ navigation }) => {
-  const _bootstrapAsync = useCallback(async () => {
+  const isUserLoggedIn = useCallback(async () => {
     const userToken = await AsyncStorage.getItem('userToken');
-    navigation.navigate(userToken ? 'App' : 'Auth');
+    navigation.navigate(userToken ? routes.app : routes.auth);
   }, [navigation]);
 
   useEffect(() => {
-    _bootstrapAsync();
-  }, [_bootstrapAsync]);
+    isUserLoggedIn();
+  }, [isUserLoggedIn]);
 
   return (
     <Container>

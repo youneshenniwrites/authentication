@@ -15,15 +15,16 @@ export const TextInput = styled.TextInput.attrs(props => ({
   autoCorrect: false,
   secureTextEntry: props.password,
 }))`
+  font-size: 18px;
+  border-color: #0195;
   border-width: 1px;
   border-radius: 30px;
   background-color: #fafafa;
   height: 55px;
   width: ${width * 0.9}px;
   padding: 16px;
-  font-size: 18px;
-  margin-bottom: 32px;
-  border-color: #0195;
+  margin-bottom: 16px;
+  margin-top: 16px;
 `;
 
 export const Button = styled.TouchableOpacity`
@@ -34,6 +35,8 @@ export const Button = styled.TouchableOpacity`
   border-radius: 30px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
 `;
 
 export const Text = styled.Text`

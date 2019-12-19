@@ -15,11 +15,11 @@ const SignIn = ({ navigation }) => {
     <Container>
       <TextInput placeholder={content.username} />
       <TextInput placeholder={content.password} password />
+      <Text color={colors.dark}>Forget password?</Text>
       <Button onPress={signInAsync}>
         <Text color={colors.bright}>Sign in</Text>
       </Button>
       <Text color={colors.dark}>Create an account</Text>
-      <Text color={colors.dark}>Forget password?</Text>
     </Container>
   );
 };
