@@ -38,5 +38,6 @@ export const Button = styled.TouchableOpacity`
 
 export const Text = styled.Text`
   font-size: 18px;
-  color: #fff;
+  font-weight: 500;
+  color: ${props => props.color};
 `;

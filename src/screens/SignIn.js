@@ -3,20 +3,23 @@ import React from 'react';
 import { AsyncStorage } from 'react-native';
 
 import { Container, TextInput, Button, Text } from '../shared/styledComponents';
+import { colors, content, routes } from '../shared/constants';
 
 const SignIn = ({ navigation }) => {
   const signInAsync = async () => {
     await AsyncStorage.setItem('userToken', 'abc');
-    navigation.navigate('App');
+    navigation.navigate(routes.app);
   };
 
   return (
     <Container>
-      <TextInput placeholder="Username" />
-      <TextInput placeholder="Password" password />
+      <TextInput placeholder={content.username} />
+      <TextInput placeholder={content.password} password />
       <Button onPress={signInAsync}>
-        <Text>Sign in</Text>
+        <Text color={colors.bright}>Sign in</Text>
       </Button>
+      <Text color={colors.dark}>Create an account</Text>
+      <Text color={colors.dark}>Forget password?</Text>
     </Container>
   );
 };
