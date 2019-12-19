@@ -8,10 +8,16 @@ import {
   SignIn,
   SignUp,
   ForgetPassword,
+  ConfirmSignUp,
 } from './src/screens';
 
 const AppStack = createStackNavigator({ Home, Profile });
-const AuthStack = createStackNavigator({ SignIn, SignUp, ForgetPassword });
+const AuthStack = createStackNavigator({
+  SignIn,
+  SignUp,
+  ConfirmSignUp,
+  ForgetPassword,
+});
 
 export default createAppContainer(
   createSwitchNavigator(

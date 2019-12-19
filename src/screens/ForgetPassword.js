@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { AsyncStorage } from 'react-native';
 
-import { Container, TextInput, Button, Text } from '../shared/styledComponents';
-import { colors, content, routes } from '../shared/constants';
+import { Container, Text } from '../shared/styledComponents';
+import { colors } from '../shared/constants';
 
-const ForgetPassword = ({ navigation: { navigate } }) => (
+const ForgetPassword = () => (
   <Container>
     <Text color={colors.dark}>Hi</Text>
   </Container>

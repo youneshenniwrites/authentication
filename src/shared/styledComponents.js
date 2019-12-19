@@ -3,7 +3,7 @@ import { Dimensions } from 'react-native';
 
 const { width } = Dimensions.get('screen');
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
   flex: 1;
   align-items: center;
   justify-content: center;
@@ -14,6 +14,7 @@ export const TextInput = styled.TextInput.attrs(props => ({
   placeholder: props.placeholder,
   autoCorrect: false,
   secureTextEntry: props.password,
+  returnKeyType: 'done',
 }))`
   font-size: 18px;
   border-color: #0195;

@@ -6,6 +6,8 @@ export const colors = {
 export const content = {
   username: 'Username',
   password: 'Password',
+  email: 'Email',
+  phone: 'Phone',
 };
 
 export const routes = {
@@ -14,6 +16,7 @@ export const routes = {
   loader: 'Loading',
   profile: 'Profile',
   register: 'SignUp',
+  confirm: 'ConfirmSignUp',
   login: 'SignIn',
   forget: 'ForgetPassword',
 };
