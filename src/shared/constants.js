@@ -35,4 +35,5 @@ export const routes = {
   confirm: 'ConfirmSignUp',
   login: 'SignIn',
   forget: 'ForgetPassword',
+  password: 'ConfirmPassword',
 };

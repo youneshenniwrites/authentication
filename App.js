@@ -8,6 +8,7 @@ import {
   SignIn,
   SignUp,
   ForgetPassword,
+  ConfirmPassword,
   ConfirmSignUp,
 } from './src/screens';
 
@@ -17,6 +18,7 @@ const AuthStack = createStackNavigator({
   SignUp,
   ConfirmSignUp,
   ForgetPassword,
+  ConfirmPassword,
 });
 
 export default createAppContainer(

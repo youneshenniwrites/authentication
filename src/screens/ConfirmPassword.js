@@ -10,20 +10,20 @@ import {
   colors,
   placeholders,
   buttons,
-  routes,
 } from '../shared';
 
-const ForgetPassword = ({ navigation: { navigate } }) => (
+const ConfirmPassword = () => (
   <Container>
     <Centered>
-      <TextInput placeholder={placeholders.username} />
+      <TextInput placeholder={placeholders.newPassword} password />
+      <TextInput placeholder={placeholders.code} keyboardType="number-pad" />
     </Centered>
     <Centered>
-      <Button onPress={() => navigate(routes.password)}>
-        <Text color={colors.bright}>{buttons.code}</Text>
+      <Button>
+        <Text color={colors.bright}>{buttons.confirm}</Text>
       </Button>
     </Centered>
   </Container>
 );
 
-export default ForgetPassword;
+export default ConfirmPassword;

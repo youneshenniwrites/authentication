@@ -7,6 +7,12 @@ const { width } = Dimensions.get('screen');
 export const Container = styled.SafeAreaView`
   flex: 1;
   align-items: center;
+  justify-content: space-between;
+  background-color: #e6ebf0;
+`;
+
+export const Centered = styled.View`
+  align-items: center;
   justify-content: center;
 `;
 

@@ -2,16 +2,21 @@
 import React from 'react';
 import { AsyncStorage } from 'react-native';
 
-import { Container, TextInput, Button, Text } from '../shared/styledComponents';
 import {
+  Container,
+  Centered,
+  TextInput,
+  Button,
+  Text,
   messages,
   colors,
   placeholders,
   routes,
   buttons,
-} from '../shared/constants';
+} from '../shared';
 
 const SignIn = ({ navigation: { navigate } }) => {
+  // TODO: move this to utils
   const signInAsync = async () => {
     await AsyncStorage.setItem('userToken', 'abc');
     navigate(routes.app);
@@ -19,15 +24,21 @@ const SignIn = ({ navigation: { navigate } }) => {
 
   return (
     <Container>
-      <TextInput placeholder={placeholders.username} />
-      <TextInput placeholder={placeholders.password} password />
-      <Text color={colors.dark} onPress={() => navigate(routes.forget)}>
-        {messages.forget}
-      </Text>
-      <Button onPress={signInAsync}>
-        <Text color={colors.bright}>{buttons.login}</Text>
-      </Button>
-      <Text onPress={() => navigate(routes.register)}>{messages.register}</Text>
+      <Centered>
+        <TextInput placeholder={placeholders.username} />
+        <TextInput placeholder={placeholders.password} password />
+        <Text color={colors.dark} onPress={() => navigate(routes.forget)}>
+          {messages.forget}
+        </Text>
+      </Centered>
+      <Centered>
+        <Text onPress={() => navigate(routes.register)}>
+          {messages.register}
+        </Text>
+        <Button onPress={signInAsync}>
+          <Text color={colors.bright}>{buttons.login}</Text>
+        </Button>
+      </Centered>
     </Container>
   );
 };
