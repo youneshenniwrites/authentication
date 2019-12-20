@@ -1,3 +1,11 @@
+export const titles = {
+  login: 'Sign in',
+  register: 'Sign up',
+  confirm: 'Confirm user',
+  forget: 'Forget password',
+  newPassword: 'New password',
+};
+
 export const messages = {
   forget: 'Forget password ?',
   register: 'Create an account',

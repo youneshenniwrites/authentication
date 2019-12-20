@@ -1,4 +1,11 @@
-export { messages, colors, placeholders, routes, buttons } from './constants';
+export {
+  titles,
+  messages,
+  colors,
+  placeholders,
+  routes,
+  buttons,
+} from './constants';
 export {
   Container,
   Centered,
