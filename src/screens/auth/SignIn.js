@@ -13,7 +13,7 @@ import {
   placeholders,
   routes,
   buttons,
-} from '../shared';
+} from '../../shared';
 
 const SignIn = ({ navigation: { navigate } }) => {
   // TODO: move this to utils

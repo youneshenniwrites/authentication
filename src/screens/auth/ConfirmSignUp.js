@@ -7,8 +7,8 @@ import {
   Text,
   Button,
   Centered,
-} from '../shared/styledComponents';
-import { colors, placeholders, routes, buttons } from '../shared/constants';
+} from '../../shared/styledComponents';
+import { colors, placeholders, routes, buttons } from '../../shared/constants';
 
 const ConfirmSignUp = ({ navigation: { navigate } }) => (
   <Container>

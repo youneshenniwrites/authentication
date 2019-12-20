@@ -5,6 +5,7 @@ import {
   Loading,
   Home,
   Profile,
+  Settings,
   SignIn,
   SignUp,
   ForgetPassword,
@@ -12,7 +13,7 @@ import {
   ConfirmSignUp,
 } from './src/screens';
 
-const AppStack = createStackNavigator({ Home, Profile });
+const AppStack = createStackNavigator({ Home, Profile, Settings });
 const AuthStack = createStackNavigator({
   SignIn,
   SignUp,

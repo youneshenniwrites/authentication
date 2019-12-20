@@ -1,8 +1,9 @@
-export { default as Home } from './Home';
+export { default as Home } from './app/Home';
 export { default as Loading } from './Loading';
-export { default as Profile } from './Profile';
-export { default as SignIn } from './SignIn';
-export { default as SignUp } from './SignUp';
-export { default as ForgetPassword } from './ForgetPassword';
-export { default as ConfirmPassword } from './ConfirmPassword';
-export { default as ConfirmSignUp } from './ConfirmSignUp';
+export { default as Profile } from './app/Profile';
+export { default as Settings } from './app/Settings';
+export { default as SignIn } from './auth/SignIn';
+export { default as SignUp } from './auth/SignUp';
+export { default as ForgetPassword } from './auth/ForgetPassword';
+export { default as ConfirmPassword } from './auth/ConfirmPassword';
+export { default as ConfirmSignUp } from './auth/ConfirmSignUp';

@@ -12,7 +12,7 @@ import {
   placeholders,
   routes,
   buttons,
-} from '../shared';
+} from '../../shared';
 
 const SignUp = ({ navigation: { navigate } }) => (
   <Container>

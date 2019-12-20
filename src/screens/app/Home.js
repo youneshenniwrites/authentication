@@ -2,8 +2,8 @@
 import React from 'react';
 import { AsyncStorage } from 'react-native';
 
-import { Container, Text } from '../shared/styledComponents';
-import { routes } from '../shared/constants';
+import { Container, Text } from '../../shared/styledComponents';
+import { routes } from '../../shared/constants';
 
 const HomeScreen = ({ navigation }) => {
   const showMoreApp = () => {

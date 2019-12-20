@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-import { Container, Text } from '../shared/styledComponents';
+import { Container, Text } from '../../shared/styledComponents';
 
 const Profile = () => (
   <Container>

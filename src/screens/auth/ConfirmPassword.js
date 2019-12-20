@@ -10,7 +10,7 @@ import {
   colors,
   placeholders,
   buttons,
-} from '../shared';
+} from '../../shared';
 
 const ConfirmPassword = () => (
   <Container>

@@ -11,7 +11,7 @@ import {
   placeholders,
   buttons,
   routes,
-} from '../shared';
+} from '../../shared';
 
 const ForgetPassword = ({ navigation: { navigate } }) => (
   <Container>
