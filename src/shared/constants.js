@@ -33,6 +33,7 @@ export const placeholders = {
   username: 'Username',
   password: 'Password',
   code: 'Confirmation code',
+  oldPassword: 'Old password',
   newPassword: 'New password',
   email: 'Email',
   phone: 'Phone',

@@ -2,8 +2,14 @@
 import React from 'react';
 import { AsyncStorage } from 'react-native';
 
-import { FlexCentered, Button, Text } from '../../shared/styledComponents';
-import { routes, colors, buttons } from '../../shared/constants';
+import {
+  Container,
+  Button,
+  Text,
+  TextInput,
+  Centered,
+} from '../../shared/styledComponents';
+import { routes, colors, buttons, placeholders } from '../../shared/constants';
 
 const Settings = ({ navigation }) => {
   const signOutAsync = async () => {
@@ -11,11 +17,20 @@ const Settings = ({ navigation }) => {
     navigation.navigate(routes.loader);
   };
   return (
-    <FlexCentered>
-      <Button onPress={signOutAsync}>
-        <Text color={colors.bright}>{buttons.logout}</Text>
-      </Button>
-    </FlexCentered>
+    <Container>
+      <Centered>
+        <TextInput placeholder={placeholders.oldPassword} password />
+        <TextInput placeholder={placeholders.newPassword} password />
+        <Button>
+          <Text color={colors.bright}>{buttons.confirm}</Text>
+        </Button>
+      </Centered>
+      <Centered>
+        <Button onPress={signOutAsync}>
+          <Text color={colors.bright}>{buttons.logout}</Text>
+        </Button>
+      </Centered>
+    </Container>
   );
 };
 export default Settings;
