@@ -8,12 +8,13 @@ export const Container = styled.SafeAreaView`
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  background-color: #e6ebf0;
+  background-color: ${colors.creamy};
 `;
 
 export const Centered = styled.View`
   align-items: center;
   justify-content: center;
+  background-color: ${colors.creamy};
 `;
 
 export const FlexCentered = styled(Centered)`
@@ -28,10 +29,10 @@ export const TextInput = styled.TextInput.attrs(props => ({
   secureTextEntry: props.password,
 }))`
   font-size: 18px;
-  border-color: #0195;
-  border-width: 1px;
+  border-color: ${colors.bright};
+  border-width: 0.5px;
   border-radius: 30px;
-  background-color: #fafafa;
+  background-color: ${colors.bright};
   height: 55px;
   width: ${width * 0.9}px;
   padding: 16px;
@@ -41,7 +42,7 @@ export const TextInput = styled.TextInput.attrs(props => ({
 `;
 
 export const Button = styled.TouchableOpacity`
-  background-color: blue;
+  background-color: ${colors.blue};
   width: ${width * 0.9}px;
   height: 55px;
   padding: 16px;

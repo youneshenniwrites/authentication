@@ -5,8 +5,11 @@ export const messages = {
 };
 
 export const colors = {
-  bright: '#fff',
-  dark: '#000',
+  bright: '#fafafa',
+  dark: '#33395F',
+  blue: '#1760E3',
+  creamy: '#e6ebf0',
+  grey: '#b5b1b3',
 };
 
 export const buttons = {
