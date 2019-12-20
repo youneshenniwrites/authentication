@@ -11,6 +11,7 @@ export const colors = {
 
 export const buttons = {
   login: 'Sign in',
+  logout: 'Sing out',
   code: 'Send code',
   confirm: 'Confirm',
   send: 'Send code',

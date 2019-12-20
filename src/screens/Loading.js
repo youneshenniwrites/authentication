@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useCallback } from 'react';
-import { ActivityIndicator, AsyncStorage } from 'react-native';
+import { AsyncStorage } from 'react-native';
 
-import { Container } from '../shared/styledComponents';
 import { routes } from '../shared/constants';
+import Spinner from '../components/Spinner';
 
 const Loading = ({ navigation }) => {
   const isUserLoggedIn = useCallback(async () => {
@@ -15,11 +15,7 @@ const Loading = ({ navigation }) => {
     isUserLoggedIn();
   }, [isUserLoggedIn]);
 
-  return (
-    <Container>
-      <ActivityIndicator />
-    </Container>
-  );
+  return <Spinner />;
 };
 
 export default Loading;

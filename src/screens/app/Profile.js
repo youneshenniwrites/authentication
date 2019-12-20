@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-import { Container, Text } from '../../shared/styledComponents';
+import { FlexCentered, Text } from '../../shared/styledComponents';
 
 const Profile = () => (
-  <Container>
+  <FlexCentered>
     <Text>Profile</Text>
-  </Container>
+  </FlexCentered>
 );
 export default Profile;

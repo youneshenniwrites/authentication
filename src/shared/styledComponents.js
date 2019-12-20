@@ -16,6 +16,10 @@ export const Centered = styled.View`
   justify-content: center;
 `;
 
+export const FlexCentered = styled(Centered)`
+  flex: 1;
+`;
+
 export const TextInput = styled.TextInput.attrs(props => ({
   autoCorrect: false,
   autoCapitalize: 'none',
