@@ -15,13 +15,3 @@ web-report/
 
 # Lock file
 package-lock.json
-
-# amplify
-amplify/*
-build/
-dist/
-aws-exports.js
-awsconfiguration.json
-amplifyconfiguration.json
-amplify-gradle-config.json
-amplifyxc.config
